@@ -1,0 +1,313 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Heebo';
+}
+
+header {
+	width: 100vw;
+	height: 20vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.iqon1 img {
+	width: 40px;
+	height: 40px;
+}
+
+.whatsApp {
+	display: flex;
+	width: 18.5vw;
+	justify-content: center;
+}
+
+.iqon {
+	background-color: #fdbd03;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 40px;
+	align-self: flex-end;
+}
+
+.top_line {
+	background-color: #fdbd03;
+	width: 300px;
+	height: 10px;
+}
+
+/* main area */
+
+main {
+	width: 100vw;
+	display: grid;
+	grid-template-rows: repeat(1, 2fr);
+	grid-template-columns: repeat(4, 2fr);
+}
+
+main span{
+	grid-row: 1/2;
+	grid-column: 3/5;
+	display: flex;
+	justify-content: center;
+}
+
+main img {
+	
+	width: 530px;
+	height: 800px;
+
+}
+
+.forme {
+	display: flex;
+	flex-direction: column;
+	grid-row: 1/2;
+	grid-column: 1/3;
+	width: 45vw;
+	justify-self: end;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: right;
+}
+.forme h1 {
+	color: #fdbd03;
+	font: normal normal 900 66px/97px Heebo;
+	height: 5%;
+	width: 100%;
+}
+.forme p {
+	font: normal normal normal 20px/22px Heebo;
+	align-self: flex-end;
+	width: 50%;
+}
+
+main form {
+	/* border: 2px solid #000; */
+	height: 55%;
+	width: 695px;
+	display: grid;
+	grid-template-columns: repeat(6, 115px);
+	grid-template-rows: repeat(3, 130px);
+}
+
+main form span label {
+	align-self: flex-end;
+	width: 100%;
+}
+
+main form input[type='text'] {
+	width: 98%;
+	height: 50px;
+	background-color: #e5eeff;
+	border-color: transparent;
+	border-bottom: 3px solid #fdbd03;
+}
+
+main form span {
+	justify-items: center;
+	align-items: center;
+}
+
+.fullName {
+	grid-column: 4/7;
+	grid-row: 1/2;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	justify-self: flex-end;
+	width: 100%;
+}
+.email {
+	grid-column: 1/4;
+	grid-row: 1/2;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	width: 100%;
+}
+.textarea {
+	grid-column: 1/7;
+	grid-row: 2/4;
+	display: flex;
+	flex-direction: column;
+	justify-self: end;
+	width: 100%;
+	height: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 80%;
+	resize: none;
+	align-self: flex-end;
+	background-color: #e5eeff;
+	border-color: transparent;
+	border-bottom-color: #fdbd03;
+	border-bottom-width: 3px;
+	outline: none;
+}
+
+.btn {
+	width: 100%;
+	grid-row: 4/5;
+	grid-column: 5/7;
+	display: flex;
+	flex-direction: column;
+}
+
+.btn input[type='button'] {
+	grid-column: 1/7;
+	grid-row: 4/5;
+	width: 166px;
+	height: 50px;
+	align-self: flex-end;
+	background-color: #fdbd03;
+	border-color: transparent;
+	font: normal normal bold 22px/30px Heebo;
+}
+/* footer area */
+
+footer {
+	width: 100vw;
+}
+
+.iqons {
+	display: flex;
+	flex-direction: row;
+	width: 31vw;
+	height: 20vh;
+	justify-content: end;
+
+	gap: 30px;
+}
+
+.iqons img {
+	width: 20px;
+	height: 20px;
+}
+
+.iqons div {
+	margin: 0;
+	align-self: center;
+}
+
+.buttom_line {
+	background-color: #fdbd03;
+	width: 850px;
+	height: 10px;
+}
+
+@media (max-width: 920px) {
+
+	body{
+		width: 100vw;
+		height: 100vh;
+	}
+	.whatsApp {
+		display: none;
+	}
+	header {
+		justify-content: end;
+	}
+	.top_line {
+		width: 85vw;
+	}
+
+	main {
+		display: grid;
+		grid-template-rows: repeat(4, 200px);
+		grid-template-columns: repeat(2, 200px);
+		justify-content: center;
+		align-items: center;
+	}
+	main span {
+		grid-column: 1/4;
+		grid-row: 1/2;
+		display: grid;
+		justify-content: center;
+	}
+	main img {
+		width: 180px;
+		height: 250px;
+	}
+
+	.forme {
+		grid-column: 1/4;
+		grid-row: 2/5;
+		width: 75vw;
+		text-align: center;
+		align-items: center;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.forme h1 {
+		font: normal normal 900 40px/59px Heebo;
+		grid-row: 2/3;
+	}
+
+	.forme p {
+		font: normal normal normal 15px/22px Heebo;
+		width: 100%;
+		grid-row: 1/2;
+	}
+
+	.forme h1 .forme p {
+		grid-column: 1/2;
+		width: 100%;
+	}
+
+	.forme form {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		justify-self: center;
+		align-self: center;
+		gap: 15px;
+		width: 75vw;
+	}
+
+	textarea {
+		height: 30vh;
+	}
+
+	.btn input[type='button']{
+		width: 100%;
+	}
+	.iqons{
+		width: 100vw;
+		justify-content:center;
+	}
+
+	.iqon{
+
+	width: 50px;
+	height: 50px;
+		
+	}
+.buttom_line{
+	width: 100vw;
+}
+
+}

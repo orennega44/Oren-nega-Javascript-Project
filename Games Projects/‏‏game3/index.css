@@ -1,0 +1,101 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	width: 100vw;
+	height: 100vh;
+	background-color: #69a7d0;
+}
+
+.containter {
+	border: 1px solid #000;
+	width: 100%;
+	height: 120%;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.form-control {
+	/* border: 1px solid #000; */
+	box-shadow: 2px 2px 2px 1px #000000;
+	width: 55vw;
+	height: 45vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	background-color: #ffffff43;
+}
+
+.form-control label {
+	font-family: 'assistant';
+	font-size: x-large;
+	font-weight: 500;
+}
+
+#inputCity {
+	border-radius: 5px;
+	border-color: transparent;
+	padding: 5px;
+}
+
+
+.form-control button {
+	width: 90px;
+	height: 35px;
+	border-radius: 15px;
+	border-color: transparent;
+	background-color: #00000039;
+	color: #fff;
+	font-size: large;
+	font-family: 'assistant';
+	font-weight: 600;
+	transition: all 250ms ease-in-out;
+}
+
+.form-control button:hover {
+	background-color: #000000d3;
+}
+
+#weatherInfo {
+	text-align: center;
+	text-transform: capitalize;
+	font-family: 'assistant';
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 55vw;
+	height: 45vh;
+}
+#pic {
+	width: 80px;
+	height: 80px;
+	display: none;
+    background-color: #ffffff3a;
+}
+
+#temp,
+#description,
+#errorMessage {
+	font-weight: 700;
+	font-size: larger;
+}
+
+#errorMessage {
+	color: red;
+}

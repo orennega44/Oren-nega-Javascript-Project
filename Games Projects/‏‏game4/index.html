@@ -1,0 +1,103 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,900;1,900&family=Playwrite+HU:wght@100..400&display=swap"
+			rel="stylesheet" />
+		<title>To Do List</title>
+		<script
+			src="script.js"
+			defer></script>
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body>
+		<header><h1>Product list</h1></header>
+		<div class="container">
+			<form action="">
+				<label for="userInput">Enter Item:</label>
+				<input
+					type="text"
+					class="userInput" />
+				<label for="range">how many items:</label>
+				<select
+					name="numbers"
+					class="range">
+					<option
+						value="1"
+						class="option option1">
+						1
+					</option>
+					<option
+						value="2"
+						class="option option2">
+						2
+					</option>
+					<option
+						value="3"
+						class="option option3">
+						3
+					</option>
+					<option
+						value="4"
+						class="option option4">
+						4
+					</option>
+					<option
+						value="5"
+						class="option option5">
+						5
+					</option>
+					<option
+						value="6"
+						class="option option6">
+						6
+					</option>
+					<option
+						value="7"
+						class="option option7">
+						7
+					</option>
+					<option
+						value="8"
+						class="option option8">
+						8
+					</option>
+					<option
+						value="9"
+						class="option option9">
+						9
+					</option>
+					<option
+						value="10"
+						class="option option10">
+						10
+					</option>
+				</select>
+				<input
+					type="submit"
+					class="add"
+					value="Add Item" />
+				<button class="clearList">Clear List</button>
+			</form>
+			<div id="title"><h1>item list:</h1></div>
+			<div class="itemContainer">
+				<ul class="items"></ul>
+			</div>
+		</div>
+	</body>
+</html>
