@@ -88,7 +88,7 @@ nav button:hover {
 
 .container_main {
 	display: flex;
-	background-image: url('/Images/main_background.jpg');
+	background-image: url('../../Images/main_background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50%;
@@ -160,7 +160,7 @@ nav button:hover {
 /* ME container */
 
 .container_me {
-	background-image: url('/Images/me_background.jpg');
+	background-image: url('../../Images/me_background.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100vw;
